@@ -1,0 +1,27 @@
+{% extends 'partials/base.html' %}
+{% block title %}Home{% endblock title %}
+
+{% block content %}
+<!--<h1>Home</h1>-->
+{% for post in posts %}
+
+<article class="media content-section">
+    <img class="rounded-circle article-img" src="{{ post.author.profile.image.url }}">
+    <div class="media-body">
+
+        <div class="article-metadata">
+            <a class="mr-2 text-decoration-none"
+               href="{% url 'blog:user_post' post.author.username %}">{{post.author}}</a>
+            <small class="text-muted"> | {{post.date_posted|date:"F d Y"}}</small>
+        </div>
+        <h2><a class="article-title" href="{% url 'blog:detail' post.id %}">{{post.title}}</a></h2>
+        <p class="article-content">
+            <a class="text-decoration-none text-muted" href="{% url 'blog:detail' post.id %}">{% if post.content|wordcount > 50 %}{{ post.content|truncatewords:50 }} "Read More"{% else %} {{ post.content }}{% endif %}</a>
+        </p>
+    </div>
+</article>
+
+{% endfor %}
+
+
+{% endblock content %}

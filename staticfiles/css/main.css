@@ -1,0 +1,139 @@
+body {
+  background: #fafafa;
+  color: #333333;
+  padding-top: 56px;
+  /*margin-top: 5rem;*/
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: #444444;
+}
+
+ul {
+  margin: 0;
+}
+
+.bg-steel {
+  background-color: #5f788a;
+}
+
+.site-header .navbar-nav .nav-link {
+  color: #cbd5db;
+}
+
+.site-header .navbar-nav .nav-link:hover {
+  color: #ffffff;
+}
+
+.site-header .navbar-nav .nav-link.active {
+  font-weight: 500;
+}
+
+.content-section {
+  background: #ffffff;
+  padding: 10px 20px;
+  border: 1px solid #dddddd;
+  border-radius: 3px;
+  margin-bottom: 20px;
+
+}
+
+.article-title {
+  color: #444444;
+  text-decoration: none;
+}
+
+a.article-title:hover {
+  color: #428bca;
+  text-decoration: none;
+}
+
+.article-content {
+  white-space: pre-line;
+}
+
+.article-img {
+  height: 65px;
+  width: 65px;
+  margin-right: 16px;
+}
+
+.article-metadata {
+  padding-bottom: 1px;
+  margin-bottom: 4px;
+  /*border-bottom: 1px solid #e3e3e3*/
+}
+
+.article-metadata a:hover {
+  color: #333;
+  text-decoration: none;
+}
+
+.article-svg {
+  width: 25px;
+  height: 25px;
+  vertical-align: middle;
+}
+
+.account-img {
+  height: 125px;
+  width: 125px;
+  margin-right: 20px;
+  margin-bottom: 16px;
+}
+
+.account-heading {
+  font-size: 2.5rem;
+}
+
+.comment {
+  margin-top: 15px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.comment-detail {
+    display: flex;
+}
+
+.comment-detail .account-img {
+    width: 80px;
+    height: 80px;
+}
+
+
+/* Add this to your CSS file or in a style tag in your HTML file */
+.notification-badge {
+    background-color: #3498db; /* Blue background color */
+    color: #ffffff; /* White text color */
+    padding: 6px 10px; /* Adjust padding as needed */
+    border-radius: 50%; /* Make it circular */
+    font-weight: bold; /* Bold text */
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+}
+
+.dashboard-flex {
+    display: flex;
+   /* align-items: start;*/
+}
+/*.container .flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}*/
+
+.material-icons {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
