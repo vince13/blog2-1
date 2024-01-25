@@ -15,7 +15,7 @@ SECRET_KEY = config("SECRET_KEY")
 DEBUG = True
 # DEBUG = config("DEBUG", default=False, cast=bool)
 
-ALLOWED_HOSTS = ["my-blog-now.up.railway.app"]
+ALLOWED_HOSTS = ["*"]
 
 LOGIN_URL = "userauths:login"
 LOGIN_REDIRECT_URL = "blog:home"
